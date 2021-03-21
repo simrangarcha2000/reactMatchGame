@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Mukta Mahee", sans-serif;
+}
+
+/*------------------------------------DESKTOP  HEADER ------------------------------------------*/
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: #EBEBEB;
+}
+
+#buyMoreDollarsLogo {
+  width: 15%;
+  margin: 1.5rem 0rem;
+  
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+p{
+  line-height: 1.5rem;
+}
+/*------------------------------------ FORM PAGE ------------------------------------------*/
+
+#formPageElements{
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 1rem 0rem;
+}
+
+.mobileHeader{
+  display: none;
+}
+
+/****************** Styling the Sidebar Ad on Desktop *****************/
+
+#formDesktopAd{
+  display: flex;
+  width: 43%;
+  float: left;
+  margin: 3.17rem 3rem 3.17rem 0rem;
+  background-color: #50A397;
+  height: 80%;
+  padding: 3rem;
+  flex-direction: column;
+}
+
+#formDesktopAd #img{
+  background-color: black;
+  height: 59.5vh;
+  margin: 0% 10%;
+}
+
+.whiteText{
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+
+
+
+
+
+/************ Styling Form ***********/
+
+form {
+  width: 50%;
+  float: left;
+}
+
+form h1{
+  color: #50A397 ;
+  margin-bottom: 0.5rem;
+}
+
+
+input {
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  font-family: "Mukta Mahee", sans-serif;
+  border: #b8b8b8 solid 0.3px;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #000000;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 15px;
+  color: #8e8c8c;
+  font-family: "Mukta Mahee", sans-serif;
+}
+
+#firstName, #city{
+  width: 48.8%;
+  float: left;
+}
+
+#lastName, #province{
+  width: 48.8%;
+  margin-left: 1rem;
+}
+
+
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+input:focus {
+  outline: none !important;
+}
+
+#fname {
+  width: 48%;
+}
+
+#lname {
+  margin-left: 10px;
+  width: 48%;
+}
+
+.line {
+  background-color: #e7e7e7;
+  height: 2px;
+  width: 100%;
+  margin: 2.5rem 0;
+}
+
+.form_control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form_control.success input {
+  border-color: #2ecc71;
+}
+
+input.form-error {
+  border-color: #e74c3c;
+}
+.errorMessage {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/***** CheckBox setup ********/
+
+form p {
+  font-family: "Mukta Mahee", sans-serif;
+  color: #939393;
+  font-size: 12px;
+  display: block;
+  padding-left: -5px;
+  margin-left: 2px;
+  text-indent: -5px;
+  border-radius: 0px;
+}
+.checkboxSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.checkboxSection input .checkBoxes {
+  width: 20px;
+  height: 20px;
+  border-radius: 0px;
+  /* padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px; */
+}
+
+/***** Submit Button *****/
+
+#submitButton {
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #fbdf25;
+  margin-top: 15px;
+  border: none;
+}
+
+#submitButton:hover {
+  color: #50a397;
+}
+
+/*           Error Message Styling            */
+
+#message {
+  font-family: "Mukta Mahee", sans-serif;
+  font-size: 15px;
+}
+
+#thanks {
+  display: none;
+  flex-direction: column;
+  background-color: #50a397;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+#img_1 {
+  width: 200px;
+}
+
+#thanks_text h2 {
+  text-align: center;
+  font-family: "Mukta Mahee", sans-serif;
+  color: white;
+}
+
+#thanks_text p {
+  text-align: center;
+  font-family: "Mukta Mahee", sans-serif;
+  color: white;
+}
+
+/*------------------------------------ FOOTER ------------------------------------------*/
+footer{
+  display: flex;
+  background-color: #EBEBEB;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+footer #imgName{
+  background-color: black;
+  margin-left: 10%;
+  height: 3rem;
+  width: 15%;
+  
+}
+
+footer p {
+  margin: 0.8rem 0% 0% 2%
+}
+
+#rules{
+  margin-left: 45%;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+  #buyMoreDollarsLogo {
+      width: 50%;
+      display: flex;
+  }
+
+  /*------------------------------------ FORM PAGE ------------------------------------------*/
+
+  .mobileHeader{
+      display: inline;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #formDesktopAd{
+      display: none;
+  }
+
+  #firstName, #city{
+      width: 47.5%;
+      float: left;
+  }
+  
+  #lastName, #province{
+      width: 47.5%;
+      margin-left: 1rem;
+  }
+
+  #formPageElements{
+      width: 100%;
+      margin: 0;
+  }
+
+  form {
+      width: 100%;
+      padding: 1.3rem;
+  }
+
+  form h1{
+      color: #50A397 ;
+      font-size: 1.2rem;
+  }
+
+}
