@@ -7,14 +7,14 @@ import useForm from "./components/useForm";
 import validateInfo from "./validateInfo";
 
 function NameForm(props, { submitForm }) {
-    function goToThanks(e) {
-        e.preventDefault();
+    function goToThanks() {
         console.log("Thanks");
         props.history.push("/Thanks");
     }
 
     const { handleChange, handleSubmit, values, errors } = useForm(
-        validateInfo
+        validateInfo,
+        goToThanks
     );
 
     return (
