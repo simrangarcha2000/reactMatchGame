@@ -53,11 +53,18 @@ p{
   padding: 3rem;
   flex-direction: column;
 }
-
-#formDesktopAd #img{
-  border: black 1px solid;
-  height: 59.5vh;
-  margin: 0% 10%;
+#formDesktopAd #moneyBagText{
+  width: 50%;
+  padding-bottom: 2rem;
+}
+#formDesktopAd #moneyBag {
+  width: 80%;
+  padding-bottom: 2rem;
+}
+.formDesktopAdImages {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .whiteText{
@@ -239,21 +246,21 @@ form p {
 /*------------------------------------ FOOTER ------------------------------------------*/
 footer{
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #EBEBEB;
   margin-top: 2rem;
   padding: 1rem;
 }
 
 footer #imgName{
-  border: black 1px solid;
-  margin-left: 10%;
-  height: 3rem;
-  width: 15%;
-  
+  width: 10%;
+  height: 10%;
 }
 
 footer p {
-  margin: 0.8rem 0% 0% 2%
+  margin-left: 0.5rem;
+  line-height: 0;
 }
 
 #rules{
@@ -278,6 +285,10 @@ footer p {
 
   #formDesktopAd{
       display: none;
+  }
+
+  footer {
+    display: none;
   }
 
   #firstName, #city{
