@@ -55,7 +55,7 @@ p{
 }
 
 #formDesktopAd #img{
-  background-color: black;
+  border: black 1px solid;
   height: 59.5vh;
   margin: 0% 10%;
 }
@@ -245,7 +245,7 @@ footer{
 }
 
 footer #imgName{
-  background-color: black;
+  border: black 1px solid;
   margin-left: 10%;
   height: 3rem;
   width: 15%;

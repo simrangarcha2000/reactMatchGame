@@ -1,3 +1,5 @@
+//import wADimg1 from './images/moneyBagHJ.png';
+
 function MobileFormHeader(){
     return(
         <section class = "mobileHeader">
