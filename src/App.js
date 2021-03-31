@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import NameForm from "./NameForm";
+import useForm from './components/useForm';
+import validateInfo from './validateInfo';
 import About from "./About";
 import Topics from "./Topics";
 import Thanks from "./Thanks";
+import FormSuccess from './components/FormSuccess';
 import './App.css';
 import './Grid.css';
 import {
@@ -11,6 +14,7 @@ import {
   Route,
   Link
 } from "react-router-dom"
+
 
 
 function App() {
@@ -22,8 +26,13 @@ function App() {
     setNamer(e.target.value);
   }
 
+  
   return (
+
+    
     <Router>
+
+      
       <div className="App">
 
         <Switch>
@@ -31,6 +40,10 @@ function App() {
           <Route path="/thanks" children={<Thanks namer= {namer}/>}/>
           <Route path="/about" component={About}/>
           <Route path="/topics" component={Topics}/>
+          <Route path="/useForm" component={useForm}/>
+          <Route path="/validate" component={validateInfo}/>
+          <Route path="/FormSuccess" component={FormSuccess}/>
+          
         </Switch>
       </div>
     </Router>

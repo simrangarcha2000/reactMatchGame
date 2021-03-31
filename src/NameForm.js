@@ -3,14 +3,21 @@ import logo from './images/logo.svg';
 import Footer from './components/Footer';
 import MobileFormHeader from './components/MobileFormHeader';
 import FormDesktopSide from './components/FormDesktopSide';
+import useForm from './components/useForm';
+import validateInfo from './validateInfo';
 
 
-function NameForm(props){
+
+
+function NameForm(props ,{submitForm}){
     function goToThanks(e){
         e.preventDefault();
         console.log("Thanks");
-        props.history.push('/thanks');
+        props.history.push('/Thanks');
     }
+
+    const {handleChange2 , handleSubmit ,values ,errors } = useForm(validateInfo);
+
     return (
         <main>
             <header>
@@ -20,138 +27,176 @@ function NameForm(props){
             <section id="formPageElements">
                 <FormDesktopSide/>
 
-                
-                <form id="registerForm">
+               
+                <form id="registerForm" onSubmit={handleSubmit}>
                     <h1>JOIN THE BUY MORE FAMILY</h1>
                     <div>
                         <div>
                             <input
-                                autocomplete="off"
+                                
                                 type="text"
                                 id="firstName"
                                 name="firstName"
                                 placeholder="First Name"
-                                required
+                                value={values.firstName}
+                                onChange={handleChange2}
+                                
+                                
                             />
-                            <p id="firstNameError" class="errorMessage"></p>
+                            {errors.firstName && <p>{errors.firstName}</p>}
                         </div>
 
                         <div>
                             <input
-                                autocomplete="off"
+                                
                                 type="text"
                                 id="lastName"
                                 name="lastName"
                                 placeholder="Last Name"
-                                required
+                                value={values.lastName}
+                                onChange={handleChange2}
+                                
+                                
                             />
-                            <p id="lastNameError" class="errorMessage"></p>
+                            {errors.lastName && <p>{errors.lastName}</p>}
                         </div>
                     </div>
 
                     <input
-                        autocomplete="off"
+                        
                         type="tel"
                         id="phone"
                         name="phone"
                         placeholder="Mobile Phone"
                         minlength="10"
-                        required
+                        value={values.phone}
+                        onChange={handleChange2}
+                        
                     />
-                    <p id="phoneError" class="errorMessage"></p>
+                    {errors.phone && <p>{errors.phone}</p>}
 
                     <input
-                        autocomplete="off"
+                        
                         type="email"
                         id="email"
                         name="email"
                         placeholder="E-mail"
-                        required
+                        value={values.email}
+                        onChange={handleChange2}
+                        
                     />
-                    <p id="emailError" class="errorMessage"></p>
+                    {errors.email && <p>{errors.email}</p>}
 
                     <input
                         type="password"
                         id="password"
                         name="password"
                         placeholder="Password"
+                        value={values.password}
+                        onChange={handleChange2}
                         minlength="8"
-                        required
+                        
+
                     />
-                    <p id="passwordError" class="errorMessage"></p>
+                    {errors.password && <p>{errors.password}</p>}
 
                     <input
                         type="password"
                         id="confirmPassword"
+                        name="confirmPassword"
                         placeholder="Confirm Password"
-                        required
+                        value={values.confirmPassword}
+                        onChange={handleChange2}
+                        minlength="8"
+                        
                     />
-                    <p id="passwordEror" class="errorMessage"></p>
+                    {errors.confirmPassword && <p>{errors.confirmPassword}</p>}
 
                     <input
-                        autocomplete="off"
+                        
                         id="DateOfBirth"
                         type="date"
+                        name="DateOfBirth"
                         placeholder="Date of Birth"
-                        required
+                        value={values.DateOfBirth}
+                        onChange={handleChange2}
+                        
                     />
-                    <p id="dobError" class="errorMessage"></p>
+                    {errors.DateOfBirth && <p>{errors.DateOfBirth}</p>}
 
                     <div class="line"></div>
 
                     <input
-                        autocomplete="off"
+                        
                         type="text"
                         id="address"
                         placeholder="Address Line 1"
-                        required
+                        name="address"
+                        value={values.address}
+                        onChange={handleChange2}
+                        
+                        
                     />
-                    <p id="addressError" class="errorMessage"></p>
+                    
+                    {errors.address && <p>{errors.address}</p>}
 
                     <input
-                        autocomplete="off"
+                        
                         type="text"
                         id="address2"
+                        name="address2"
                         placeholder="Address Line 2"
+                        value={values.address2}
+                        onChange={handleChange2}
                     />
-                    <p id="address2Error" class="errorMessage"></p>
+                    {errors.address2 && <p>{errors.address2}</p>}
 
                     <div >
                         <div>
                             <input
-                                autocomplete="off"
+                                
                                 type="text"
                                 id="city"
+                                name="city"
                                 placeholder="City"
-                                required
+                                value={values.city}
+                                onChange={handleChange2}
+                                
                             />
-                            <p id="cityError" class="errorMessage"></p>
+                            {errors.city && <p>{errors.city}</p>}
+
                         </div>
                         <div>
                             <input
-                                autocomplete="off"
+                                
                                 type="text"
                                 id="province"
+                                name="province"
                                 placeholder="Province"
-                                required
+                                value={values.province}
+                                onChange={handleChange2}
+                                
                             />
-                            <p id="provinceError" class="errorMessage"></p>
+                             {errors.province && <p>{errors.province}</p>}
                         </div>
                     </div>
 
                     <input
-                        autocomplete="off"
+                        
                         type="text"
                         id="postalCode"
                         placeholder="PostalCode"
-                        required
+                        name="postalCode"
+                        value={values.postalCode}
+                        onChange={handleChange2}
+                        
                     />
-                    <p id="postalCodeError" class="errorMessage"></p>
+                    {errors.postalCode && <p>{errors.postalCode}</p>}
 
                     <div>
                         <input
                             type="checkbox"
-                            required
+                            
                             name="terms"
                             id="checkBoxOne"
                             class="checkBoxes"
@@ -168,7 +213,7 @@ function NameForm(props){
                             type="checkbox"
                             name="terms"
                             id="checkBoxTwo"
-                            class="checkBoxes"
+                            
                         />
                         <label for="checkBoxTwo"
                             >By checking this box, you accept to receive mail
@@ -179,7 +224,6 @@ function NameForm(props){
                     <input
                         type="submit"
                         id="submitButton"
-                        class="button"
                         value="SUBMIT"
                         onclick="return validate()"
                     />
