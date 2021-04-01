@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import NameForm from "./routes/NameForm";
-import useForm from './components/useForm';
-import validateInfo from './validateInfo';
-import About from "./About";
-import Topics from "./Topics";
-import Thanks from "./Thanks";
-import FormSuccess from './components/FormSuccess';
+import useForm from './routes/useForm';
+import validateInfo from './routes/validateInfo';
+import About from "./routes/About";
+import Topics from "./routes/Topics";
+import Thanks from "./routes/Thanks";
+import FormSuccess from './routes/FormSuccess';
 import './App.css';
 import './Grid.css';
 import {
