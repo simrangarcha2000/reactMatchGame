@@ -1,10 +1,10 @@
 import { withRouter } from "react-router-dom";
-import logo from "./images/logo.svg";
-import Footer from "./components/Footer";
-import MobileFormHeader from "./components/MobileFormHeader";
-import FormDesktopSide from "./components/FormDesktopSide";
-import useForm from "./components/useForm";
-import validateInfo from "./validateInfo";
+import logo from "../images/logo.svg";
+import Footer from "../components/Footer";
+import MobileFormHeader from "../components/MobileFormHeader";
+import FormDesktopSide from "../components/FormDesktopSide";
+import useForm from "../util/useForm";
+import validateInfo from "../util/validateInfo";
 
 function NameForm(props, { submitForm }) {
     function goToThanks() {
@@ -32,7 +32,7 @@ function NameForm(props, { submitForm }) {
 
                 <form id="registerForm" onSubmit={handleSubmit}>
                     <h1>JOIN THE BUY MORE FAMILY</h1>
-                    <div>
+                    <div class="desktopOneLine">
                         <div>
                             <input
                                 type="text"
@@ -134,7 +134,7 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.address2 && <p>{errors.address2}</p>}
 
-                    <div>
+                    <div class="desktopOneLine">
                         <div>
                             <input
                                 type="text"
@@ -169,7 +169,7 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.postalCode && <p>{errors.postalCode}</p>}
 
-                    <div>
+                    <div class="checkBoxOneLine">
                         <input
                             type="checkbox"
                             name="terms"
@@ -177,18 +177,22 @@ function NameForm(props, { submitForm }) {
                             class="checkBoxes"
                         />
                         <label for="checkBoxOne">
-                            By checking this box you agree to accept the rules
-                            and regulations of the game. Please
-                            <a href="#"> CLICK HERE</a> to view the rules and
-                            consent form.
+                            <p>
+                                By checking this box you agree to accept the
+                                rules and regulations of the game. Please
+                                <a href="#"> CLICK HERE</a> to view the rules
+                                and consent form.
+                            </p>
                         </label>
                     </div>
-                    <div>
+                    <div class="checkBoxOneLine">
                         <input type="checkbox" name="terms" id="checkBoxTwo" />
                         <label for="checkBoxTwo">
-                            By checking this box, you accept to receive mail
-                            notifications regarding the products, sponsors and
-                            other communications.
+                            <p>
+                                By checking this box, you accept to receive mail
+                                notifications regarding the products, sponsors
+                                and other communications.
+                            </p>
                         </label>
                     </div>
                     <input type="submit" id="submitButton" value="SUBMIT" />
