@@ -1,7 +1,9 @@
+import footerLogo from '../images/footerHJ.png';
+
 function Footer(){
     return(
         <footer>
-            <div id="imgName">BuyMOREDollars</div>
+            <img src={footerLogo} id="imgName"/>
             <p>©  2021 All rights reserved</p>
             <p id="rules">Rules and Policies</p>
         </footer>
