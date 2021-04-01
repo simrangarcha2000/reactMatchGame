@@ -1,189 +1,199 @@
 * {
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Mukta Mahee", sans-serif;
-}
-
-#registerForm p {
-
-  color: red;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Mukta Mahee", sans-serif;
 }
 
 /*------------------------------------DESKTOP  HEADER ------------------------------------------*/
 
-header{
-  display: flex;
-  justify-content: center;
-  background-color: #EBEBEB;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ebebeb;
 }
 
 #buyMoreDollarsLogo {
-  width: 15%;
-  margin: 1.5rem 0rem;
-  
+    width: 15%;
+    margin: 1.5rem 0rem;
 }
 
 main {
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
 }
 
-p{
-  line-height: 1.5rem;
+p {
+    line-height: 1.5rem;
 }
 /*------------------------------------ FORM PAGE ------------------------------------------*/
 
-#formPageElements{
-  width: 80%;
-  margin: auto;
-  margin-top: 1rem;
-  padding: 1rem 0rem;
+#formPageElements {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
 }
 
-.mobileHeader{
-  display: none;
+.mobileHeader {
+    display: none;
 }
 
 /****************** Styling the Sidebar Ad on Desktop *****************/
 
-#formDesktopAd{
-  display: flex;
-  width: 43%;
-  float: left;
-  margin: 3.17rem 3rem 3.17rem 0rem;
-  background-color: #50A397;
-  height: 80%;
-  padding: 3rem;
-  flex-direction: column;
+#formDesktopAd {
+    display: flex;
+    width: 43%;
+    float: left;
+    margin: 3.17rem 3rem 3.17rem 0rem;
+    background-color: #50a397;
+    height: 80%;
+    padding: 3rem;
+    flex-direction: column;
+}
+#formDesktopAd #moneyBagText {
+    width: 50%;
+    padding-bottom: 2rem;
+}
+#formDesktopAd #moneyBag {
+    width: 80%;
+    padding-bottom: 2rem;
+}
+.formDesktopAdImages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#formDesktopAd #img{
-  background-color: black;
-  height: 59.5vh;
-  margin: 0% 10%;
+.whiteText {
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.3rem;
 }
-
-.whiteText{
-  color: white;
-  font-size: 1.4rem;
-  margin-top: 0.5rem;
-  margin-bottom: 1.3rem;
-}
-
-
-
-
-
 
 /************ Styling Form ***********/
 
 form {
-  width: 50%;
-  float: left;
+    width: 50%;
+    float: left;
 }
 
-form h1{
-  color: #50A397 ;
-  margin-bottom: 0.5rem;
+form h1 {
+    color: #50a397;
+    margin-bottom: 0.5rem;
 }
-
 
 input {
-  padding: 0.5rem;
-  background-color: #f3f3f3;
-  font-family: "Mukta Mahee", sans-serif;
-  border: #b8b8b8 solid 0.3px;
-  border-radius: 2px;
-  font-size: 15px;
-  color: #000000;
-  width: 100%;
+    padding: 0.5rem;
+    background-color: #f3f3f3;
+    font-family: "Mukta Mahee", sans-serif;
+    border: #b8b8b8 solid 0.3px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #000000;
+    width: 100%;
 }
 
 ::placeholder {
-  font-size: 15px;
-  color: #8e8c8c;
-  font-family: "Mukta Mahee", sans-serif;
+    font-size: 15px;
+    color: #8e8c8c;
+    font-family: "Mukta Mahee", sans-serif;
+}
+.desktopOneLine {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
-#firstName, #city{
-  width: 48.8%;
-  float: left;
+#firstName,
+#city {
 }
 
-#lastName, #province{
-  width: 48.8%;
-  margin-left: .8rem;
+#lastName,
+#province {
 }
 
+.checkBoxOneLine {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+}
 
+.checkBoxOneLine p {
+    padding-left: 1rem;
+    line-height: 1rem;
+}
 
 input[type="checkbox"] {
-  width: auto;
+    width: auto;
 }
 
 input:focus {
-  outline: none !important;
+    outline: none !important;
 }
 
 #fname {
-  width: 48%;
+    width: 48%;
 }
 
 #lname {
-  margin-left: 10px;
-  width: 48%;
+    margin-left: 10px;
+    width: 48%;
 }
 
 .line {
-  background-color: #e7e7e7;
-  height: 2px;
-  width: 100%;
-  margin: 2.5rem 0;
+    background-color: #e7e7e7;
+    height: 2px;
+    width: 100%;
+    margin: 2.5rem 0;
 }
 
 .form_control input:focus {
-  outline: 0;
-  border-color: #777;
+    outline: 0;
+    border-color: #777;
 }
 
 .form_control.success input {
-  border-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 input.form-error {
-  border-color: #e74c3c;
+    border-color: #e74c3c;
 }
 .errorMessage {
-  color: #e74c3c;
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 1rem;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1rem;
 }
 
 /***** CheckBox setup ********/
 
 form p {
-  font-family: "Mukta Mahee", sans-serif;
-  color: #939393;
-  font-size: 12px;
-  display: block;
-  padding-left: -5px;
-  margin-left: 2px;
-  text-indent: -5px;
-  border-radius: 0px;
+    font-family: "Mukta Mahee", sans-serif;
+    color: #939393;
+    font-size: 12px;
+    display: block;
+    padding-left: -5px;
+    margin-left: 2px;
+    text-indent: -5px;
+    border-radius: 0px;
 }
 .checkboxSection {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .checkboxSection input .checkBoxes {
-  width: 20px;
-  height: 20px;
-  border-radius: 0px;
-  /* padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+    /* padding: 0;
   margin: 0;
   vertical-align: bottom;
   position: relative;
@@ -193,121 +203,169 @@ form p {
 /***** Submit Button *****/
 
 #submitButton {
-  font-weight: 700;
-  font-size: 20px;
-  background-color: #fbdf25;
-  margin-top: 15px;
-  border: none;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #fbdf25;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
 }
 
 #submitButton:hover {
-  color: #50a397;
+    color: #50a397;
 }
 
 /*           Error Message Styling            */
 
 #message {
-  font-family: "Mukta Mahee", sans-serif;
-  font-size: 15px;
+    font-family: "Mukta Mahee", sans-serif;
+    font-size: 15px;
 }
 
 #thanks {
-  display: none;
-  flex-direction: column;
-  background-color: #50a397;
-  position: fixed;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #50a397;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
 
 #img_1 {
-  width: 200px;
+    width: 200px;
 }
 
 #thanks_text h2 {
-  text-align: center;
-  font-family: "Mukta Mahee", sans-serif;
-  color: white;
+    text-align: center;
+    font-family: "Mukta Mahee", sans-serif;
+    color: white;
 }
 
 #thanks_text p {
-  text-align: center;
-  font-family: "Mukta Mahee", sans-serif;
-  color: white;
+    text-align: center;
+    font-family: "Mukta Mahee", sans-serif;
+    color: white;
 }
 
 /*------------------------------------ FOOTER ------------------------------------------*/
-footer{
-  display: flex;
-  background-color: #EBEBEB;
-  margin-top: 2rem;
-  padding: 1rem;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ebebeb;
+    margin-top: 2rem;
+    padding: 1rem;
 }
 
-footer #imgName{
-  background-color: black;
-  margin-left: 10%;
-  height: 3rem;
-  width: 15%;
-  
+footer #imgName {
+    width: 10%;
+    height: 10%;
 }
 
 footer p {
-  margin: 0.8rem 0% 0% 2%
+    margin-left: 0.5rem;
+    line-height: 0;
 }
 
-#rules{
-  margin-left: 45%;
+#rules {
+    margin-left: 45%;
+    text-decoration: underline;
+}
+
+#rules:hover {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
+    #buyMoreDollarsLogo {
+        width: 40%;
+        display: flex;
+    }
 
+    header {
+        background-color: #ffffff;
+    }
+    .mobileHeader {
+        background-color: #50a397;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  #buyMoreDollarsLogo {
-      width: 50%;
-      display: flex;
-  }
+    .formMobileAdImages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+    }
 
-  /*------------------------------------ FORM PAGE ------------------------------------------*/
+    .formMobileAdImages #moneyBagTextM {
+        width: 34%;
+    }
 
-  .mobileHeader{
-      display: inline;
-      display: flex;
-      flex-direction: column;
-  }
+    .formMobileAdImages #moneyBagM {
+        width: 40%;
+        padding-right: 2rem;
+    }
 
-  #formDesktopAd{
-      display: none;
-  }
+    .mobileHeader p {
+        font-size: 0.8rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
 
-  #firstName, #city{
-      width: 47.5%;
-      float: left;
-  }
-  
-  #lastName, #province{
-      width: 47.5%;
-      margin-left: 1rem;
-  }
+    .mobileHeader .whiteText {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
 
-  #formPageElements{
-      width: 100%;
-      margin: 0;
-  }
+    .mobileHeader #underlineText {
+        text-align: left;
+        padding-bottom: 0;
+    }
 
-  form {
-      width: 100%;
-      padding: 1.3rem;
-  }
+    /*------------------------------------ FORM PAGE ------------------------------------------*/
 
-  form h1{
-      color: #50A397 ;
-      font-size: 1.2rem;
-  }
+    .mobileHeader {
+        display: inline;
+        display: flex;
+        flex-direction: column;
+    }
 
+    #formDesktopAd {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #firstName,
+    #city {
+    }
+
+    #lastName,
+    #province {
+    }
+
+    #formPageElements {
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 1.3rem;
+    }
+
+    form h1 {
+        color: #50a397;
+        font-size: 1.2rem;
+    }
 }
