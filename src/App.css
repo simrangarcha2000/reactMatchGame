@@ -55,6 +55,28 @@ p {
     display: none;
 }
 
+/* !------------------------------------GAME PAGE ------------------------------------------*/
+.gameInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.gameSection {
+    /* max-width: 70vw; */
+    width: 75%;
+    margin: 0 auto;
+}
+.gameInfo * {
+    background-color: #999999;
+    text-align: center;
+    color: black;
+    padding: 0.5rem;
+    width: 48%;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
 /****************** Styling the Sidebar Ad on Desktop *****************/
 
 #formDesktopAd {
