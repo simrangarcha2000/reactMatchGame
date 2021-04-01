@@ -55,6 +55,41 @@ p {
     display: none;
 }
 
+/* ?------------------------------------SPONSORS COMPONENT ------------------------------------------*/
+.sponsors {
+    background-color: #ebebeb;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.sponsorGrid {
+    display: grid;
+    grid-template-areas:
+        "a b c"
+        "a d e";
+    gap: 5px;
+    height: 20vh;
+}
+.sponsorItem {
+    background-color: #333333;
+    height: 100%;
+    width: 100%;
+}
+.sponsorA {
+    grid-area: a;
+}
+.sponsorB {
+    grid-area: b;
+}
+.sponsorC {
+    grid-area: c;
+}
+.sponsorD {
+    grid-area: d;
+}
+.sponsorE {
+    grid-area: e;
+}
+
 /* !------------------------------------GAME PAGE ------------------------------------------*/
 .gameInfo {
     display: flex;
@@ -62,7 +97,7 @@ p {
     align-items: center;
     width: 100%;
 }
-.gameSection {
+section {
     /* max-width: 70vw; */
     width: 75%;
     margin: 0 auto;
@@ -76,7 +111,7 @@ p {
 }
 .gameTile {
     background-color: #50a397;
-    height: 18rem;
+    height: 25rem;
     width: 19%;
     border-radius: 10px;
 }
@@ -343,6 +378,7 @@ footer p {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     .formMobileAdImages {

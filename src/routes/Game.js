@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
+import Sponsors from "../components/Sponsors";
 
 const Game = () => {
     return (
@@ -28,6 +29,7 @@ const Game = () => {
                     <div className="gameTile"></div>
                 </div>
             </section>
+            <Sponsors></Sponsors>
             <Footer></Footer>
         </main>
     );
