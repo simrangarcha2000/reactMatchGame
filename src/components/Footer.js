@@ -5,7 +5,7 @@ function Footer(){
         <footer>
         <img src={footerLogo} alt="Buy More Dollars" id="imgName"/>
             <p>©  2021 All rights reserved</p>
-            <p id="rules">Rules and Policies</p>
+            <p id="rules" src="#">Rules and Policies</p>
         </footer>
     )
 

@@ -110,20 +110,32 @@ input {
   color: #8e8c8c;
   font-family: "Mukta Mahee", sans-serif;
 }
-.formDesktopOneline {
+.desktopOneLine {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
+
 #firstName, #city{
-  width: 48.8%;
-  float: left;
+
 }
 
 #lastName, #province{
-  width: 48.8%;
-  margin-left: 1rem;
+
+
 }
 
+.checkBoxOneLine {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
 
+.checkBoxOneLine p {
+  padding-left: 1rem;
+  line-height: 1rem;
+}
 
 input[type="checkbox"] {
   width: auto;
@@ -270,6 +282,11 @@ footer p {
 
 #rules{
   margin-left: 45%;
+  text-decoration: underline;
+}
+
+#rules:hover {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
@@ -339,13 +356,11 @@ footer p {
   }
 
   #firstName, #city{
-      width: 47.5%;
-      float: left;
+    
   }
   
   #lastName, #province{
-      width: 47.5%;
-      margin-left: 1rem;
+    
   }
 
   #formPageElements{

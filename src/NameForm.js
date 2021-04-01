@@ -23,7 +23,7 @@ function NameForm(props){
                 
                 <form id="registerForm">
                     <h1>JOIN THE BUY MORE FAMILY</h1>
-                    <div>
+                    <div class="desktopOneLine">
                         <div>
                             <input
                                 autocomplete="off"
@@ -116,7 +116,7 @@ function NameForm(props){
                     />
                     <p id="address2Error" class="errorMessage"></p>
 
-                    <div >
+                    <div class="desktopOneLine">
                         <div>
                             <input
                                 autocomplete="off"
@@ -148,7 +148,7 @@ function NameForm(props){
                     />
                     <p id="postalCodeError" class="errorMessage"></p>
 
-                    <div>
+                    <div class="checkBoxOneLine">
                         <input
                             type="checkbox"
                             required
@@ -157,13 +157,13 @@ function NameForm(props){
                             class="checkBoxes"
                         />
                         <label for="checkBoxOne"
-                            >By checking this box you agree to accept the rules
+                            ><p>By checking this box you agree to accept the rules
                             and regulations of the game. Please
                             <a href="#"> CLICK HERE</a> to view the rules and
-                            consent form.</label
-                        >
+                            consent form.</p>
+                            </label>
                     </div>
-                    <div>
+                    <div class="checkBoxOneLine">
                         <input
                             type="checkbox"
                             name="terms"
@@ -171,9 +171,9 @@ function NameForm(props){
                             class="checkBoxes"
                         />
                         <label for="checkBoxTwo"
-                            >By checking this box, you accept to receive mail
+                            ><p>By checking this box, you accept to receive mail
                             notifications regarding the products, sponsors and
-                            other communications.
+                            other communications.</p>
                         </label>
                     </div>
                     <input
