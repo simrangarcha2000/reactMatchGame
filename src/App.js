@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import "./Grid.css";
+import Game from "./routes/Game";
 
 function App() {
     const [namer, setNamer] = useState("");
@@ -30,6 +31,7 @@ function App() {
                     <Route path="/thanks" children={<Thanks namer={namer} />} />
                     <Route path="/about" component={About} />
                     <Route path="/topics" component={Topics} />
+                    <Route path="/game" component={Game} />
                 </Switch>
             </div>
         </Router>
