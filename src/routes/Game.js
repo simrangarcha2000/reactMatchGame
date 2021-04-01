@@ -15,7 +15,18 @@ const Game = () => {
                     <div className="timer">20:00:00</div>
                     <div className="score">0</div>
                 </div>
-                <div className="gameBoard"></div>
+                <div className="gameBoard">
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                    <div className="gameTile"></div>
+                </div>
             </section>
             <Footer></Footer>
         </main>
