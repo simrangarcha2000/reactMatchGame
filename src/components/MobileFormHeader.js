@@ -3,8 +3,8 @@ import mADimg2 from "../images/moneyBagHJ.png";
 
 function MobileFormHeader() {
     return (
-        <section class="mobileHeader">
-            <div class="formMobileAdImages">
+        <section className="mobileHeader">
+            <div className="formMobileAdImages">
                 <img src={mADimg2} alt="Money bag" id="moneyBagM" />
                 <img
                     src={mADimg1}
@@ -12,7 +12,7 @@ function MobileFormHeader() {
                     id="moneyBagTextM"
                 />
             </div>
-            <p class="whiteText">
+            <p className="whiteText">
                 Match the right tiles of this game every 48-hour periods, If you
                 win, you will get amazing prizes!
             </p>

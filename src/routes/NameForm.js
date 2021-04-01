@@ -32,7 +32,7 @@ function NameForm(props, { submitForm }) {
 
                 <form id="registerForm" onSubmit={handleSubmit}>
                     <h1>JOIN THE BUY MORE FAMILY</h1>
-                    <div class="desktopOneLine">
+                    <div className="desktopOneLine">
                         <div>
                             <input
                                 type="text"
@@ -63,7 +63,7 @@ function NameForm(props, { submitForm }) {
                         id="phone"
                         name="phone"
                         placeholder="Mobile Phone"
-                        minlength="10"
+                        minLength="10"
                         value={values.phone}
                         onChange={handleChange}
                     />
@@ -86,7 +86,7 @@ function NameForm(props, { submitForm }) {
                         placeholder="Password"
                         value={values.password}
                         onChange={handleChange}
-                        minlength="8"
+                        minLength="8"
                     />
                     {errors.password && <p>{errors.password}</p>}
 
@@ -97,7 +97,7 @@ function NameForm(props, { submitForm }) {
                         placeholder="Confirm Password"
                         value={values.confirmPassword}
                         onChange={handleChange}
-                        minlength="8"
+                        minLength="8"
                     />
                     {errors.confirmPassword && <p>{errors.confirmPassword}</p>}
 
@@ -111,7 +111,7 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.DateOfBirth && <p>{errors.DateOfBirth}</p>}
 
-                    <div class="line"></div>
+                    <div className="line"></div>
 
                     <input
                         type="text"
@@ -134,7 +134,7 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.address2 && <p>{errors.address2}</p>}
 
-                    <div class="desktopOneLine">
+                    <div className="desktopOneLine">
                         <div>
                             <input
                                 type="text"
@@ -169,14 +169,14 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.postalCode && <p>{errors.postalCode}</p>}
 
-                    <div class="checkBoxOneLine">
+                    <div className="checkBoxOneLine">
                         <input
                             type="checkbox"
                             name="terms"
                             id="checkBoxOne"
-                            class="checkBoxes"
+                            className="checkBoxes"
                         />
-                        <label for="checkBoxOne">
+                        <label htmlFor="checkBoxOne">
                             <p>
                                 By checking this box you agree to accept the
                                 rules and regulations of the game. Please
@@ -185,9 +185,9 @@ function NameForm(props, { submitForm }) {
                             </p>
                         </label>
                     </div>
-                    <div class="checkBoxOneLine">
+                    <div className="checkBoxOneLine">
                         <input type="checkbox" name="terms" id="checkBoxTwo" />
-                        <label for="checkBoxTwo">
+                        <label htmlFor="checkBoxTwo">
                             <p>
                                 By checking this box, you accept to receive mail
                                 notifications regarding the products, sponsors

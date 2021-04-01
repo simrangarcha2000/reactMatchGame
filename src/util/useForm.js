@@ -31,6 +31,7 @@ const useForm = (validateInfo, direction) => {
         e.preventDefault();
         setErrors(validateInfo(values));
         if (Object.keys(errors).length === 0) {
+            console.log(values);
             direction();
         }
     };

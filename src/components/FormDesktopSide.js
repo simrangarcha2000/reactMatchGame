@@ -4,7 +4,7 @@ import dADimg2 from "../images/moneyBagHJ.png";
 function FormDesktopSide() {
     return (
         <aside id="formDesktopAd">
-            <div class="formDesktopAdImages">
+            <div className="formDesktopAdImages">
                 <img
                     src={dADimg1}
                     alt="Chance to win $10,000"
@@ -12,7 +12,7 @@ function FormDesktopSide() {
                 />
                 <img src={dADimg2} alt="Money bag" id="moneyBag" />
             </div>
-            <p class="whiteText">
+            <p className="whiteText">
                 Match the right tiles of this game every 48-hour periods, If you
                 win, you will get amazing prizes!
             </p>
