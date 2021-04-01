@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import NameForm from "./NameForm";
+import NameForm from "./routes/NameForm";
 import useForm from './components/useForm';
 import validateInfo from './validateInfo';
 import About from "./About";

@@ -1,10 +1,10 @@
 import { withRouter } from "react-router-dom";
 import logo from "./images/logo.svg";
-import Footer from "./components/Footer";
-import MobileFormHeader from "./components/MobileFormHeader";
-import FormDesktopSide from "./components/FormDesktopSide";
-import useForm from "./components/useForm";
-import validateInfo from "./validateInfo";
+import Footer from "../components/Footer";
+import MobileFormHeader from "../components/MobileFormHeader";
+import FormDesktopSide from "../components/FormDesktopSide";
+import useForm from "../components/useForm";
+import validateInfo from "../validateInfo";
 
 function NameForm(props, { submitForm }) {
     function goToThanks() {
