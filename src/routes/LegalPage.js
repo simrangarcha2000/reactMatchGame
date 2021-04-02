@@ -1,8 +1,14 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
+import logo from "../images/logo.svg";
+import Footer from "../components/Footer";
+import MobileFormHeader from "../components/MobileFormHeader";
 
 function LegalPage() {
     return (
+        
         <div>
+            console.log("Legal");
             <div class="row">
                 <div class="col l12 logo-box">
                     <img class="responsive" src="" alt="main logo" />
