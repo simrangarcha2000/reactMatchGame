@@ -5,6 +5,7 @@ import MobileFormHeader from "../components/MobileFormHeader";
 import FormDesktopSide from "../components/FormDesktopSide";
 import useForm from "../util/useForm";
 import validateInfo from "../util/validateInfo";
+import { Link } from "react-router-dom";
 
 function NameForm(props, { submitForm }) {
     function goToThanks() {
@@ -180,8 +181,8 @@ function NameForm(props, { submitForm }) {
                             <p>
                                 By checking this box you agree to accept the
                                 rules and regulations of the game. Please
-                                <a href="#"> CLICK HERE</a> to view the rules
-                                and consent form.
+                                <Link to="/legal">CLICK HERE</Link> to view the
+                                rules and consent form.
                             </p>
                         </label>
                     </div>
