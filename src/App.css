@@ -170,6 +170,14 @@ section {
     padding: 2rem;
 }
 
+table{
+border-style: solid; 
+width: 100%;
+ border-color: #000000; 
+ margin-left: auto;
+  margin-right: auto;
+}
+
 .termsBox p {
 
 }
@@ -584,4 +592,6 @@ footer p {
     .termsBox{
         margin: 1rem;
     }
+
+    
 }
