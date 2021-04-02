@@ -30,7 +30,8 @@ const useForm = (validateInfo, direction) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(validateInfo(values));
-        if (Object.keys(errors).length === 0) {
+        console.log("ERRORS", validateInfo(values));
+        if (Object.keys(validateInfo(values)).length === 0) {
             console.log(values);
             direction();
         }

@@ -2,9 +2,9 @@ export default function validateInfo(values) {
     let errors = {};
 
     if (!values.firstName) {
-        errors.firstName = "firstName required";
+        errors.firstName = "First Name required";
     } else if (!/^[a-zA-z]+$/.test(values.firstName)) {
-        errors.firstName = "first name is invalid";
+        errors.firstName = "First Name is Invalid";
     }
 
     // lastName
@@ -24,13 +24,13 @@ export default function validateInfo(values) {
             values.email
         )
     ) {
-        errors.email = "Email address is invalid";
+        errors.email = "Email Address is Invalid";
     }
 
     // password
 
     if (!values.password) {
-        errors.password = " password required";
+        errors.password = "Password required";
     } else if (
         !/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,16}$/.test(values.password)
     ) {
@@ -40,41 +40,41 @@ export default function validateInfo(values) {
     // confirm password
 
     if (!values.confirmPassword) {
-        errors.confirmPassword = " confirmPassword required";
+        errors.confirmPassword = "Password is not the same!";
     } else if (values.confirmPassword !== values.password) {
-        errors.confirmPassword = "Password is invalid";
+        errors.confirmPassword = "Password is not the same!";
     }
 
     // phone
 
     if (!values.phone) {
-        errors.phone = "phone required";
+        errors.phone = "Phone required";
     } else if (
         !/^[\\(]{0,1}([0-9]){3}[\\)]{0,1}[ ]?([^0-1]){1}([0-9]){2}[ ]?[-]?[ ]?([0-9]){4}[ ]*((x){0,1}([0-9]){1,5}){0,1}$/.test(
             values.phone
         )
     ) {
-        errors.phone = "phone number is invalid";
+        errors.phone = "Phone Number is Invalid";
     }
 
     // DateOfBirth
 
     if (!values.DateOfBirth) {
-        errors.DateOfBirth = "DateOfBirth required";
+        errors.DateOfBirth = "Date Of Birth Required";
     } else if (
         !/^(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))$/.test(
             values.DateOfBirth
         )
     ) {
-        errors.DateOfBirth = "Date Of Birth is invalid";
+        errors.DateOfBirth = "Date Of Birth is Invalid";
     }
 
     // address
 
     if (!values.address) {
-        errors.address = "address line 1 required";
+        errors.address = "Address Line Required";
     } else if (!/^\d+\s[A-z]+(\s[A-z]+$)?/.test(values.address)) {
-        errors.address = "address is invalid";
+        errors.address = "Address is Invalid";
     }
 
     // address2
@@ -88,35 +88,35 @@ export default function validateInfo(values) {
     // city
 
     if (!values.city) {
-        errors.city = "city required";
+        errors.city = "City required";
     } else if (
         !/^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$/.test(
             values.city
         )
     ) {
-        errors.city = "city name is invalid";
+        errors.city = "City Name is Invalid";
     }
 
     // province
 
     if (!values.province) {
-        errors.province = "province required";
+        errors.province = "Province Required";
     } else if (
         !/^([a-zA-Z\u0080-\u024F]+(?:. |-| |'))*[a-zA-Z\u0080-\u024F]*$/.test(
             values.province
         )
     ) {
-        errors.province = "province name is invalid";
+        errors.province = "Province Name is Invalid";
     }
 
     // postal
 
     if (!values.postalCode) {
-        errors.postalCode = "postalCode required";
+        errors.postalCode = "Postal Code Required";
     } else if (
         !/^([A-Za-z]\d[A-Za-z][-\s]?\d[A-Za-z]\d)$/.test(values.postalCode)
     ) {
-        errors.postalCode = "postal code is invalid";
+        errors.postalCode = "Postal Code is Invalid";
     }
 
     return errors;
