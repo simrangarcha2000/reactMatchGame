@@ -223,6 +223,9 @@ input {
     justify-content: space-between;
     align-items: stretch;
 }
+.desktopOneLine div {
+    width: 49%;
+}
 
 #firstName,
 #city {
