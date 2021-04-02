@@ -211,7 +211,7 @@ function NameForm(props, { submitForm }) {
                             </label>
                         </div>
                     </div>
-                    <input type="submit" id="submitButton" value="SUBMIT" />
+                    <input type="submit" id="submitButton" value="SIGN UP" />
                 </form>
             </section>
             <Footer />
