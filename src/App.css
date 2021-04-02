@@ -5,6 +5,10 @@
     font-family: "Mukta Mahee", sans-serif;
 }
 
+h1{
+    color: #50a397;
+}
+
 /*------------------------------------GENERAL  HEADER ------------------------------------------*/
 .regularHeader {
     background-color: #ebebeb;
@@ -142,6 +146,36 @@ section {
     height: 80%;
     width: 80%;
     object-fit: contain;
+}
+
+/* -----------------------Legal Page --------------------------------*/
+
+#legalPageElements{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+}
+
+#termsSection{
+    float: right;
+}
+
+.termsBox {
+    height: 15rem;
+    width: 90%;
+    background-color: #EBEBEB;
+    margin-left: 4rem;
+    overflow-x: hidden;
+    padding: 2rem;
+}
+
+.termsBox p {
+
+}
+
+#terms {
+    margin-top: 1.3rem;
 }
 
 /* !------------------------------------GAME PAGE ------------------------------------------*/
@@ -534,5 +568,12 @@ footer p {
     form h1 {
         color: #50a397;
         font-size: 1.2rem;
+    }
+
+    /*------------------------------------ LEGAL PAGE ------------------------------------------*/
+
+    #legalPageElements {
+        width: 100%;
+        margin: 0;
     }
 }
