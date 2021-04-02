@@ -9,6 +9,7 @@ import "./App.css";
 import "./Grid.css";
 import Game from "./routes/Game";
 import Home from "./routes/Home";
+import LegalPage from "./routes/LegalPage";
 
 function App() {
     const [namer, setNamer] = useState("");
@@ -34,6 +35,7 @@ function App() {
                     <Route path="/topics" component={Topics} />
                     <Route path="/game" component={Game} />
                     <Route path="/home" component={Home} />
+                    <Route path="/legal" component={LegalPage} />
                 </Switch>
             </div>
         </Router>

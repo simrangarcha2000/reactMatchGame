@@ -4,7 +4,7 @@ import logo from "../images/buyMoreLogo.png";
 const RegularHeader = () => {
     return (
         <header className="regularHeader">
-            <img src={logo} alt="" srcset="" />
+            <img src={logo} alt="" />
         </header>
     );
 };
