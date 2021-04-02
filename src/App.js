@@ -10,6 +10,8 @@ import "./Grid.css";
 import Game from "./routes/Game";
 import Home from "./routes/Home";
 import LegalPage from "./routes/LegalPage";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 function App() {
     const [namer, setNamer] = useState("");
@@ -20,25 +22,32 @@ function App() {
     };
 
     return (
-        <Router>
-            <div className="App">
-                <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        children={
-                            <NameForm handleChange={(e) => handleChange(e)} />
-                        }
-                    />
-                    <Route path="/thanks" children={<Thanks namer={namer} />} />
-                    <Route path="/about" component={About} />
-                    <Route path="/topics" component={Topics} />
-                    <Route path="/game" component={Game} />
-                    <Route path="/home" component={Home} />
-                    <Route path="/legal" component={LegalPage} />
-                </Switch>
-            </div>
-        </Router>
+        <Provider store={store}>
+            <Router>
+                <div className="App">
+                    <Switch>
+                        <Route
+                            exact
+                            path="/"
+                            children={
+                                <NameForm
+                                    handleChange={(e) => handleChange(e)}
+                                />
+                            }
+                        />
+                        <Route
+                            path="/thanks"
+                            children={<Thanks namer={namer} />}
+                        />
+                        <Route path="/about" component={About} />
+                        <Route path="/topics" component={Topics} />
+                        <Route path="/game" component={Game} />
+                        <Route path="/home" component={Home} />
+                        <Route path="/legal" component={LegalPage} />
+                    </Switch>
+                </div>
+            </Router>
+        </Provider>
     );
 }
 

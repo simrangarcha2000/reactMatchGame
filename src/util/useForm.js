@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { updateName } from "../redux/";
 
 const useForm = (validateInfo, direction) => {
+    const dispatcher = useDispatch();
+
     const [values, setValues] = useState({
         firstName: "",
         lastName: "",
@@ -33,6 +37,11 @@ const useForm = (validateInfo, direction) => {
         console.log("ERRORS", validateInfo(values));
         if (Object.keys(validateInfo(values)).length === 0) {
             console.log(values);
+            dispatcher(
+                updateName({
+                    username: values.firstName + " " + values.lastName,
+                })
+            );
             direction();
         }
     };

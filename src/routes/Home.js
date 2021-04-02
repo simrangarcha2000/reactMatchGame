@@ -2,17 +2,20 @@ import React from "react";
 import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
+import { useSelector } from "react-redux";
 
 import cardsImage from "../images/homeCards.png";
 
 const Home = () => {
+    const form = useSelector((state) => state.form);
+
     return (
         <main>
             <RegularHeader></RegularHeader>
             <section className="homeSection">
                 <div className="titleInfo home">
                     <h1>WELCOME BACK</h1>
-                    <h3>First Name, Last Name</h3>
+                    <h3>{form.username}</h3>
                 </div>
                 <div className="status">
                     <img src={cardsImage} alt="" />

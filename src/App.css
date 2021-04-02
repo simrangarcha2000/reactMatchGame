@@ -59,6 +59,35 @@ section {
     display: none;
 }
 
+/* -----------------------Legal Page --------------------------------*/
+
+#legalPageElements {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+}
+
+#termsSection {
+    float: right;
+}
+
+.termsBox {
+    height: 15rem;
+    width: 90%;
+    background-color: #ebebeb;
+    margin-left: 4rem;
+    overflow-x: hidden;
+    padding: 2rem;
+}
+
+.termsBox p {
+}
+
+#terms {
+    margin-top: 1.3rem;
+}
+
 /* ?------------------------------------SPONSORS COMPONENT ------------------------------------------*/
 .sponsors {
     background-color: #ebebeb;
