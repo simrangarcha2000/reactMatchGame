@@ -34,7 +34,8 @@ export default function validateInfo(values) {
     } else if (
         !/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,16}$/.test(values.password)
     ) {
-        errors.password = "Password is invalid";
+        errors.password =
+            "Password is invalid, it should have 1 Capital letter, 1 regular letter, 1 number and 1 special character";
     }
 
     // confirm password
