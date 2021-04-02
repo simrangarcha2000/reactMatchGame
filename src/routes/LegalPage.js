@@ -115,7 +115,35 @@ We have a Fair Use Policy because we provide a multi-tenant service. This means 
                     <h1 id="terms">Privacy Policy</h1>
                     <article class = "termsBox">
                     <p><strong>About us</strong><br /><br />We respect your privacy and are committed to protecting your personal data. We are a digital solutions provider. We offer a full suite of services, including audit, strategy, branding, gamification, web marketing, web design, graphic design, editorial cover and web app development. <br /><br />We also provide gamification and digitisation solutions through our bespoke BuyMore product. <br />Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. <br /><br /><strong>Purpose of this privacy policy</strong><br /><br />This privacy policy aims to give you information on how we collect and process your personal data so that you can be confident when you use our websites, access our products or purchase any of our services that you know what your personal data is being used for and that it is being kept safe. <br />It is important that you read this privacy policy together with any other notice which we may provide to you in the future, so that you are always fully aware of how and why we are using your data. Unless we let you know otherwise, this privacy policy supplements any future notices we may give you.<br /><br /><strong>How is your personal data collected?</strong><br /><br />We use different methods to collect data from and about you including through:</p>
-
+                    <table style="border-style: solid; width: 100%; border-color: #000000; margin-left: auto; margin-right: auto;" border="1" cellspacing="5" cellpadding="5" width="100%">
+<tbody>
+<tr>
+<td width="30%">
+<p>Direct interactions</p>
+</td>
+<td width="70%">
+<p>You may give us your personal data by filling in forms on our websites or by corresponding with us in person, by email, by phone, by post or otherwise. This includes personal data you provide when requesting services or marketing communications from us or when you create an account on one of our bespoke product solutions.</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>Automated technologies or interactions</p>
+</td>
+<td width="70%">
+<p>As you interact with our websites, we may automatically collect information about your equipment, browsing actions and patterns. We collect this personal data by using cookies and other similar technologies. Please see below on Cookies for further information.</p>
+</td>
+</tr>
+<tr>
+<td width="30%">
+<p>Third parties or publicly available sources</p>
+</td>
+<td width="70%">
+<p>We may receive personal data about you from various third parties and public sources. This includes, for example, information received from analytics providers such as Google.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
                     </article>
                     <h1 id="terms">Game Conditions</h1>
                     <article class = "termsBox">
