@@ -181,7 +181,7 @@ function NameForm(props, { submitForm }) {
                             <p>
                                 By checking this box you agree to accept the
                                 rules and regulations of the game. Please
-                                <Link to ="">CLICK HERE </Link> to view the rules
+                                <Link to ="/legal">CLICK HERE </Link> to view the rules
                                 and consent form.
                             </p>
                         </label>
