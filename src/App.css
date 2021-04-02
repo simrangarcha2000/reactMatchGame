@@ -153,9 +153,12 @@ section {
 .titleInfo h1 {
     font-size: 3rem;
     margin: 0;
+    line-height: 0.5;
+    margin-top: 1rem;
 }
 .titleInfo h3 {
     margin: 0;
+    margin-bottom: 1rem;
 }
 .gameInfo {
     display: flex;
@@ -165,7 +168,9 @@ section {
 }
 
 .gameBoard {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 12px;
@@ -177,8 +182,10 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 25rem;
-    width: 19%;
+    min-height: 0;
+    min-width: 0;
+    height: 20rem;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -389,17 +396,10 @@ form p {
 }
 
 #thanks {
-    display: none;
     flex-direction: column;
     background-color: #50a397;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
     height: 100vh;
-    top: 0;
-    left: 0;
+    width: 100vw;
 }
 
 #img_1 {
@@ -448,6 +448,50 @@ footer p {
 }
 
 @media only screen and (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+    .gameSection {
+        padding: 10px;
+    }
+    .gameTile {
+        height: 15rem;
+    }
+    /* .gameTile {
+        background-color: #50a397;
+        background-image: url(./images/franges.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 15rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        outline: 5px solid white;
+        outline-offset: -15px;
+    } */
+    .logoFrange {
+        background-color: rgba(135, 222, 213, 0.7);
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem;
+    }
+    .logoFrange img {
+        width: 100%;
+    }
+
+    .sponsorGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "b c d e"
+            "a a a a";
+        gap: 7px;
+        height: 30vh;
+    }
+
     #buyMoreDollarsLogo {
         width: 40%;
         display: flex;
