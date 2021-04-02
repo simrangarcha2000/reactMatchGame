@@ -576,4 +576,12 @@ footer p {
         width: 100%;
         margin: 0;
     }
+
+    #terms{
+        margin-left: 2rem;
+    }
+
+    .termsBox{
+        margin: 1rem;
+    }
 }
