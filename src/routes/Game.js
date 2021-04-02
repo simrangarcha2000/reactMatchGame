@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
+import logo from "../images/buyMoreLogo.png";
 
 const Game = () => {
     return (
@@ -17,16 +18,56 @@ const Game = () => {
                     <div className="score">0</div>
                 </div>
                 <div className="gameBoard">
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
-                    <div className="gameTile"></div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
+                    <div className="gameTile">
+                        <div className="logoFrange">
+                            <img src={logo} alt="" />
+                        </div>
+                    </div>
                 </div>
             </section>
             <Sponsors></Sponsors>

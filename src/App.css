@@ -42,6 +42,10 @@ main {
 p {
     line-height: 1.5rem;
 }
+section {
+    width: 75%;
+    margin: 0 auto;
+}
 /*------------------------------------ FORM PAGE ------------------------------------------*/
 
 #formPageElements {
@@ -60,14 +64,15 @@ p {
     background-color: #ebebeb;
     padding: 2rem;
     border-radius: 10px;
+    margin: 2rem auto;
 }
 .sponsorGrid {
     display: grid;
     grid-template-areas:
-        "a b c"
-        "a d e";
-    gap: 5px;
-    height: 20vh;
+        "a a b c"
+        "a a d e";
+    gap: 7px;
+    height: 30vh;
 }
 .sponsorItem {
     background-color: #333333;
@@ -91,17 +96,25 @@ p {
 }
 
 /* !------------------------------------GAME PAGE ------------------------------------------*/
+.gameSection {
+    background-color: #fffdda;
+    width: 100%;
+    padding: 0 12.5%;
+}
+.titleInfo h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+.titleInfo h3 {
+    margin: 0;
+}
 .gameInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-section {
-    /* max-width: 70vw; */
-    width: 75%;
-    margin: 0 auto;
-}
+
 .gameBoard {
     display: flex;
     flex-wrap: wrap;
@@ -111,9 +124,27 @@ section {
 }
 .gameTile {
     background-color: #50a397;
+    background-image: url(./images/franges.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 25rem;
     width: 19%;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 5px solid white;
+    outline-offset: -15px;
+}
+.logoFrange {
+    background-color: rgba(135, 222, 213, 0.7);
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+}
+.logoFrange img {
+    width: 45%;
 }
 .gameInfo * {
     background-color: #999999;
