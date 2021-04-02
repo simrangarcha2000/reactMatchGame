@@ -72,6 +72,8 @@ section {
 }
 .sponsorGrid {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "a a b c"
         "a a d e";
@@ -101,7 +103,6 @@ section {
     align-items: center;
     height: 100%;
 }
-
 .sponsorC {
     grid-area: c;
     background-color: white;
@@ -121,6 +122,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.sponsorB img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+.sponsorC img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+.sponsorD img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+.sponsorE img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
 }
 
 /* !------------------------------------GAME PAGE ------------------------------------------*/
