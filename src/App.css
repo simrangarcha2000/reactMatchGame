@@ -144,11 +144,66 @@ section {
     object-fit: contain;
 }
 
+/* ?------------------------------------HOME PAGE ------------------------------------------*/
+.homeSection {
+    background-color: #fffdda;
+    width: 100%;
+    padding: 0 12.5%;
+}
+.homeSection .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homeSection .status img {
+    width: 50%;
+    margin: 0 auto;
+}
+.playbtn {
+    margin: 2rem auto;
+    background: #fcde16;
+    border-radius: 10px;
+    color: black;
+    padding: 0.3rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    border: none;
+    cursor: not-allowed;
+}
+.playbtn:hover {
+    background: #ffed7c;
+}
+.status .textStatus {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.status .textStatus * {
+    margin: 1rem;
+}
+.status .textStatus .text2 {
+    font-family: Mukta Mahee;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 22px;
+    /* or 122% */
+
+    color: #000000;
+}
+
 /* !------------------------------------GAME PAGE ------------------------------------------*/
 .gameSection {
     background-color: #fffdda;
     width: 100%;
     padding: 0 12.5%;
+}
+.titleInfo.home h3 {
+    color: #50a397;
 }
 .titleInfo h1 {
     font-size: 3rem;
@@ -476,6 +531,56 @@ footer p {
 }
 
 @media only screen and (max-width: 767px) {
+    .homeSection {
+        background-color: #fffdda;
+        width: 100%;
+        padding: 4% 5%;
+    }
+    .homeSection .status {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .homeSection .status img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .playbtn {
+        margin: 2rem auto;
+        background: #fcde16;
+        border-radius: 10px;
+        color: black;
+        padding: 0.3rem 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        border: none;
+        cursor: not-allowed;
+    }
+    .playbtn:hover {
+        background: #ffed7c;
+    }
+    .status .textStatus {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    .status .textStatus * {
+        margin: 1rem;
+    }
+    .status .textStatus .text2 {
+        font-family: Mukta Mahee;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 22px;
+        /* or 122% */
+
+        color: #000000;
+    }
     #img_1 {
         width: 60%;
     }
