@@ -298,9 +298,11 @@ input {
 .checkBoxOneLine {
     display: flex;
     align-items: center;
-    padding-bottom: 1rem;
 }
 
+.checkboxes {
+    margin-top: 1rem;
+}
 .checkBoxOneLine p {
     padding-left: 1rem;
     line-height: 1rem;

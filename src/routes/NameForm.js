@@ -6,8 +6,10 @@ import FormDesktopSide from "../components/FormDesktopSide";
 import useForm from "../util/useForm";
 import validateInfo from "../util/validateInfo";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function NameForm(props, { submitForm }) {
+    const [dateInput, setDateinput] = useState("text");
     function goToThanks() {
         console.log("Thanks");
         props.history.push("/Thanks");
@@ -104,7 +106,13 @@ function NameForm(props, { submitForm }) {
 
                     <input
                         id="DateOfBirth"
-                        type="date"
+                        type={dateInput}
+                        onFocus={() => {
+                            setDateinput("date");
+                        }}
+                        onBlur={() => {
+                            setDateinput("text");
+                        }}
                         name="DateOfBirth"
                         placeholder="Date of Birth"
                         value={values.DateOfBirth}
@@ -170,31 +178,38 @@ function NameForm(props, { submitForm }) {
                     />
                     {errors.postalCode && <p>{errors.postalCode}</p>}
 
-                    <div className="checkBoxOneLine">
-                        <input
-                            type="checkbox"
-                            name="terms"
-                            id="checkBoxOne"
-                            className="checkBoxes"
-                        />
-                        <label htmlFor="checkBoxOne">
-                            <p>
-                                By checking this box you agree to accept the
-                                rules and regulations of the game. Please
-                                <Link to="/legal">CLICK HERE</Link> to view the
-                                rules and consent form.
-                            </p>
-                        </label>
-                    </div>
-                    <div className="checkBoxOneLine">
-                        <input type="checkbox" name="terms" id="checkBoxTwo" />
-                        <label htmlFor="checkBoxTwo">
-                            <p>
-                                By checking this box, you accept to receive mail
-                                notifications regarding the products, sponsors
-                                and other communications.
-                            </p>
-                        </label>
+                    <div className="checkboxes">
+                        <div className="checkBoxOneLine">
+                            <input
+                                type="checkbox"
+                                name="terms"
+                                id="checkBoxOne"
+                                className="checkBoxes"
+                            />
+                            <label htmlFor="checkBoxOne">
+                                <p>
+                                    By checking this box you agree to accept the
+                                    rules and regulations of the game. Please
+                                    <Link to="/legal">CLICK HERE</Link> to view
+                                    the rules and consent form.
+                                </p>
+                            </label>
+                        </div>
+
+                        <div className="checkBoxOneLine">
+                            <input
+                                type="checkbox"
+                                name="terms"
+                                id="checkBoxTwo"
+                            />
+                            <label htmlFor="checkBoxTwo">
+                                <p>
+                                    By checking this box, you accept to receive
+                                    mail notifications regarding the products,
+                                    sponsors and other communications.
+                                </p>
+                            </label>
+                        </div>
                     </div>
                     <input type="submit" id="submitButton" value="SUBMIT" />
                 </form>
