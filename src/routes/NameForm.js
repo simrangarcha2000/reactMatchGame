@@ -4,13 +4,11 @@ import Footer from "../components/Footer";
 import MobileFormHeader from "../components/MobileFormHeader";
 import FormDesktopSide from "../components/FormDesktopSide";
 import useForm from "../util/useForm";
-import LegalPage from "./LegalPage";
 import validateInfo from "../util/validateInfo";
-import { BrowserRouter as Router, Switch, Route , Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function NameForm(props, { submitForm }) {
-    function goToThanks(e) {
-        e.preventDefault();
+    function goToThanks() {
         console.log("Thanks");
         props.history.push("/Thanks");
     }
@@ -33,7 +31,7 @@ function NameForm(props, { submitForm }) {
             <section id="formPageElements">
                 <FormDesktopSide />
 
-                <form id="registerForm" onSubmit={goToThanks}>
+                <form id="registerForm" onSubmit={handleSubmit}>
                     <h1>JOIN THE BUY MORE FAMILY</h1>
                     <div className="desktopOneLine">
                         <div>
@@ -183,7 +181,7 @@ function NameForm(props, { submitForm }) {
                             <p>
                                 By checking this box you agree to accept the
                                 rules and regulations of the game. Please
-                                <Link to="/LegalPage"> CLICK HERE </Link>  to view the rules
+                                <Link to ="">CLICK HERE </Link> to view the rules
                                 and consent form.
                             </p>
                         </label>

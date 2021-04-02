@@ -30,6 +30,7 @@ function App() {
                         }
                     />
                     <Route path="/thanks" children={<Thanks namer={namer} />} />
+                    <Route path="/thanks" children={<Thanks namer={namer} />} />
                     <Route path="/about" component={About} />
                     <Route path="/topics" component={Topics} />
                     <Route path="/game" component={Game} />
