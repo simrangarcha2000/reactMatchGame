@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
 import { useSelector } from "react-redux";
-
+import { Link } from "react-router-dom";
 import cardsImage from "../images/homeCards.png";
 
 const Home = () => {
@@ -19,7 +19,10 @@ const Home = () => {
                 </div>
                 <div className="status">
                     <img src={cardsImage} alt="" />
-                    <button className="playbtn">23:59:55</button>
+                    <button to="/src/routes/WinPage.js" className="playbtn">23:59:55</button>
+                    <Link className="toHomeThanks" to="/WinPage">
+                Play Game
+            </Link>
                     <div className="textStatus">
                         <p className="text1">
                             Unfortunately , you are not eligible to play the

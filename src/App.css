@@ -559,6 +559,15 @@ footer p {
     cursor: pointer;
 }
 
+/* ?------------------------------------WIN PAGE COMPONENT ------------------------------------------*/
+
+.yellow-box{
+    background-color: #fffdda;
+    width: 100%;
+    padding: 2% 12.5%;
+
+}
+
 @media only screen and (max-width: 767px) {
     .homeSection {
         background-color: #fffdda;

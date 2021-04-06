@@ -3,6 +3,7 @@ import NameForm from "./routes/NameForm";
 import About from "./routes/About";
 import Topics from "./routes/Topics";
 import Thanks from "./routes/Thanks";
+import WinPage from "./routes/WinPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
@@ -44,6 +45,7 @@ function App() {
                         <Route path="/game" component={Game} />
                         <Route path="/home" component={Home} />
                         <Route path="/legal" component={LegalPage} />
+                        <Route path="/WinPage" component={WinPage} />
                     </Switch>
                 </div>
             </Router>
