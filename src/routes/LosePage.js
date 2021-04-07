@@ -36,6 +36,17 @@ function LosePage() {
 
                 </div>
 
+                <div class="time-box2">
+
+                        <div class="time-p2">
+                            <p>COME BACK IN</p>
+                        </div>
+
+                        <div class="timeFrame2">
+                            <p>36:59:33</p>
+                        </div>
+
+                    </div>
             </div>
 
             </section>

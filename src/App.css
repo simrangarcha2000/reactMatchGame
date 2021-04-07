@@ -689,6 +689,23 @@ button.btn-a p {
     font-size: 24px;
 }
 
+.time-box2 {
+    float: right;
+    margin-top: 4rem;
+}
+
+.time-p2 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.timeFrame2{
+    text-align: center;
+    font-size: 3.4rem;
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 767px) {
     .homeSection {
         background-color: #fffdda;
