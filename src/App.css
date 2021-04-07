@@ -949,4 +949,16 @@ button.btn-a {
     margin-top: 3.5rem;
 }
 
+
+ /* ?------------------------------------LOSE PAGE COMPONENT ------------------------------------------*/
+
+.coupen-banner img {
+    width: 24rem;
+    /* text-align: center; */
+    margin-left: -2.2rem;
+}
+
+.lose-content {
+    margin-top: 3rem;
+}
 }
