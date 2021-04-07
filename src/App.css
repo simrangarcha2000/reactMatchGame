@@ -650,6 +650,19 @@ button.btn-a p {
     margin-top: 1rem;
 }
 
+/* ?------------------------------------LOSE PAGE COMPONENT ------------------------------------------*/
+
+.yellow-box2{
+    background-color: #fffdda;
+    width: 100%;
+    padding: 2% 12.5%;
+    height: 700px;
+    background-size: contain;
+    background-position-x: center;
+    
+
+}
+
 @media only screen and (max-width: 767px) {
     .homeSection {
         background-color: #fffdda;

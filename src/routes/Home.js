@@ -21,7 +21,7 @@ const Home = () => {
                     <img src={cardsImage} alt="" />
                     <button to="/src/routes/WinPage.js" className="playbtn">23:59:55</button>
                     <Link className="toHomeThanks" to="/WinPage">
-                Play Game
+                win page
             </Link>
                     <div className="textStatus">
                         <p className="text1">

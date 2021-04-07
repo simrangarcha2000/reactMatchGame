@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 function WinPage() {
     const form = useSelector((state) => state.form);
@@ -36,6 +37,9 @@ function WinPage() {
                         <p>ENTER</p>
                     </button>
                     </div>
+                    <Link className="toHomeThanks" to="/LosePage">
+                lose page
+            </Link>
 
                     <div class="time-box">
 
