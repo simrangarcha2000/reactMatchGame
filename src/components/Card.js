@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../images/buyMoreLogo.png";
+import burgerCard from "../images/gameCard1.png";
 
+
+/**Face UP is when the image is shoeing in the card  */
 class Card extends React.Component{
 
     constructor(props){
@@ -19,18 +22,17 @@ class Card extends React.Component{
     render(){
         let content;
         if(this.state.faceUp){
-            content = 'Front'
+            content = <img src={burgerCard} alt="Burger Card Component" />
         }else {
-            content = <img src={logo} alt="" />
+            content = <img src={logo} alt="Back Side of Card"/>
         }
     return (
         <main>
-                    <div className="gameTile" onClick={this.flip.bind(this)}>
-                        <div className="logoFrange">
-                            {this.state.faceUp ? 'Front' : <img src={logo} alt="" />}
-                            
-                        </div>
-                    </div>    
+            <div className="gameTile" onClick={this.flip.bind(this)}>
+                <div className="logoFrange">
+                    {content}  
+                </div>
+            </div>    
         </main>
     );
     }
