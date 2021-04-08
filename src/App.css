@@ -214,26 +214,13 @@ width: 100%;
     margin: 1rem 0;
 }
 .gameTile {
-    background-color: #50a397;
-    background-image: url(./images/franges.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 25rem;
     width: 19%;
     border-radius: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 5px solid white;
-    outline-offset: -15px;
 }
-.logoFrange {
-    background-color: rgba(135, 222, 213, 0.7);
-    width: 100%;
-    text-align: center;
-    padding: 0.8rem;
-}
+
+
+
 .logoFrange img {
     width: 45%;
 }

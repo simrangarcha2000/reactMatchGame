@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "../images/buyMoreLogo.png";
-import burgerCard from "../images/gameCard1.png";
+import logo from "../images/cardBack.png";
+import burgerCard from "../images/cardBurger.png";
 
 
 /**Face UP is when the image is shoeing in the card  */
@@ -29,10 +29,8 @@ class Card extends React.Component{
     return (
         <main>
             <div className="gameTile" onClick={this.flip.bind(this)}>
-                <div className="logoFrange">
                     {content}  
-                </div>
-            </div>    
+            </div> 
         </main>
     );
     }
