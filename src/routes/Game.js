@@ -4,9 +4,11 @@ import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
 import logo from "../images/buyMoreLogo.png";
 
-const Game = () => {
+function Game (){
     return (
         <main>
+
+
             <RegularHeader></RegularHeader>
             <section className="gameSection">
                 <div className="titleInfo">
