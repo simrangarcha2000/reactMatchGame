@@ -20,6 +20,12 @@ class Game extends React.Component{
     }
 
     render(){
+        let content;
+        if(this.state.faceUp){
+            content = 'Front'
+        }else {
+            content = 'Back'
+        }
     return (
         <main>
             <RegularHeader></RegularHeader>
@@ -32,10 +38,13 @@ class Game extends React.Component{
                     <div className="timer">20:00:00</div>
                     <div className="score">0</div>
                 </div>
-                <div className="gameBoard" onClick={this.flip.bind(this)}>
-                    <div className="gameTile">
+                <div className="gameBoard">
+                    <div className="gameTile" onClick={this.flip.bind(this)}>
                         <div className="logoFrange">
                             <img src={logo} alt="" />
+                            {this.state.faceUp ? 'Front' : 'Back'}
+                            state: {JSON.stringify(this.state.faceUp)}
+
                         </div>
                     </div>
                     <div className="gameTile">
