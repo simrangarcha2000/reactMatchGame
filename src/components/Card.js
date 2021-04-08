@@ -21,16 +21,14 @@ class Card extends React.Component{
         if(this.state.faceUp){
             content = 'Front'
         }else {
-            content = 'Back'
+            content = <img src={logo} alt="" />
         }
     return (
         <main>
                     <div className="gameTile" onClick={this.flip.bind(this)}>
                         <div className="logoFrange">
-                            <img src={logo} alt="" />
-                            {this.state.faceUp ? 'Front' : 'Back'}
-                            state: {JSON.stringify(this.state.faceUp)}
-
+                            {this.state.faceUp ? 'Front' : <img src={logo} alt="" />}
+                            
                         </div>
                     </div>    
         </main>

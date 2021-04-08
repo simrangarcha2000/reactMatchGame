@@ -2,7 +2,6 @@ import React from "react";
 import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
-import logo from "../images/buyMoreLogo.png";
 import Card from "../components/Card";
 
 function Game(){

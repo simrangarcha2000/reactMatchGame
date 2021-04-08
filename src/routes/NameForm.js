@@ -5,7 +5,7 @@ import MobileFormHeader from "../components/MobileFormHeader";
 import FormDesktopSide from "../components/FormDesktopSide";
 import useForm from "../util/useForm";
 import validateInfo from "../util/validateInfo";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 function NameForm(props, { submitForm }) {
     function goToThanks() {
