@@ -33,8 +33,15 @@ function Game(){
                     <div className="score">0</div>
                 </div>
                 <div className="gameBoard">
-                    <Card content =""></Card>
-                    <Card/>
+                    {fronts.map((f) => {
+                        return (
+                        <>
+                    <Card content ={f}/>
+                    <Card content={f}/>
+                    </>)
+
+                    })}
+
                 </div>
             </section>
             <Sponsors></Sponsors>
