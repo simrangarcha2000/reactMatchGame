@@ -3,29 +3,10 @@ import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
 import logo from "../images/buyMoreLogo.png";
+import Card from "../components/Card";
 
-class Game extends React.Component{
+function Game(){
 
-    constructor(props){
-        super(props);
-        this.state = {
-            faceUp: false,
-        };
-    }
-
-    flip(){
-        console.log(`Flipping from ${this.state.faceUp}`)
-        this.setState({faceUp: !this.state.faceUp})
-        console.log(`Flipping to ${this.state.faceUp}`)
-    }
-
-    render(){
-        let content;
-        if(this.state.faceUp){
-            content = 'Front'
-        }else {
-            content = 'Back'
-        }
     return (
         <main>
             <RegularHeader></RegularHeader>
@@ -39,66 +20,14 @@ class Game extends React.Component{
                     <div className="score">0</div>
                 </div>
                 <div className="gameBoard">
-                    <div className="gameTile" onClick={this.flip.bind(this)}>
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                            {this.state.faceUp ? 'Front' : 'Back'}
-                            state: {JSON.stringify(this.state.faceUp)}
-
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
-                    <div className="gameTile">
-                        <div className="logoFrange">
-                            <img src={logo} alt="" />
-                        </div>
-                    </div>
+                    <Card/>
+                    <Card/>
                 </div>
             </section>
             <Sponsors></Sponsors>
             <Footer></Footer>
         </main>
     );
-    }
 };
 
 export default Game;
