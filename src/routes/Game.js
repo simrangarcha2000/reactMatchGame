@@ -4,11 +4,24 @@ import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
 import logo from "../images/buyMoreLogo.png";
 
-function Game (){
+class Game extends React.Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            faceUp: false,
+        };
+    }
+
+    flip(){
+        console.log(`Flipping from ${this.state.faceUp}`)
+        this.setState({faceUp: !this.state.faceUp})
+        console.log(`Flipping to ${this.state.faceUp}`)
+    }
+
+    render(){
     return (
         <main>
-
-
             <RegularHeader></RegularHeader>
             <section className="gameSection">
                 <div className="titleInfo">
@@ -19,7 +32,7 @@ function Game (){
                     <div className="timer">20:00:00</div>
                     <div className="score">0</div>
                 </div>
-                <div className="gameBoard">
+                <div className="gameBoard" onClick={this.flip.bind(this)}>
                     <div className="gameTile">
                         <div className="logoFrange">
                             <img src={logo} alt="" />
@@ -76,6 +89,7 @@ function Game (){
             <Footer></Footer>
         </main>
     );
+    }
 };
 
 export default Game;
