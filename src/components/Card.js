@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/cardBack.png";
-import burgerCard from "../images/cardBurger.png";
+
 
 
 /**Face UP is when the image is shoeing in the card  */
@@ -8,6 +8,7 @@ class Card extends React.Component{
 
     constructor(props){
         super(props);
+        console.log(props);
         this.state = {
             faceUp: false,
         };
@@ -22,7 +23,7 @@ class Card extends React.Component{
     render(){
         let content;
         if(this.state.faceUp){
-            content = <img src={burgerCard} alt="Burger Card Component" />
+            content = this.props.content;
         }else {
             content = <img src={logo} alt="Back Side of Card"/>
         }
