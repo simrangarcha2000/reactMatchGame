@@ -296,6 +296,14 @@ section {
     font-weight: 600;
     font-size: 1.3rem;
 }
+.gameTileSelected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gameTileSelected img {
+    width: 70%;
+}
 
 /****************** Styling the Sidebar Ad on Desktop *****************/
 
@@ -561,7 +569,7 @@ footer p {
 
 /* ?------------------------------------WIN PAGE COMPONENT ------------------------------------------*/
 
-.yellow-box{
+.yellow-box {
     background-color: #fffdda;
     width: 100%;
     padding: 2% 12.5%;
@@ -569,15 +577,13 @@ footer p {
     height: 700px;
     background-size: contain;
     background-position-x: center;
-    
-
 }
 
 .heading {
     text-align: center;
     font-size: 64px;
     color: E054A6;
-    color: #E054A6;
+    color: #e054a6;
     font-weight: 400;
     font-family: Pacifico;
 }
@@ -606,9 +612,9 @@ button.btn-a {
     font-weight: 600;
     width: 15%;
     text-align: center;
-    PADDING-BOTTOM: .6REM;
-    padding-top: .6rem;
-    BORDER: NONE;
+    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
+    border: NONE;
     border-radius: 10px;
     margin-top: 2.2rem;
 }
@@ -652,15 +658,13 @@ button.btn-a p {
 
 /* ?------------------------------------LOSE PAGE COMPONENT ------------------------------------------*/
 
-.yellow-box2{
+.yellow-box2 {
     background-color: #fffdda;
     width: 100%;
-    padding: 2% 12.5%;  
+    padding: 2% 12.5%;
     height: 789px;
     background-size: contain;
     background-position-x: center;
-    
-
 }
 
 .coupen-banner {
@@ -673,12 +677,11 @@ button.btn-a p {
     /* text-align: center; */
 }
 
-
 .heading2 {
     text-align: center;
     font-size: 64px;
     color: E054A6;
-    color: #E054A6;
+    color: #e054a6;
     font-weight: 400;
     font-family: Pacifico;
 }
@@ -700,7 +703,7 @@ button.btn-a p {
     text-align: center;
 }
 
-.timeFrame2{
+.timeFrame2 {
     text-align: center;
     font-size: 3.4rem;
     margin-top: 1rem;
@@ -892,73 +895,70 @@ button.btn-a p {
         font-size: 1.2rem;
     }
 
-
     /* ?------------------------------------WIN PAGE COMPONENT ------------------------------------------*/
 
     .yellow-box {
-    background-color: #fffdda;
-    width: 100%;
-    padding: 2% 12.5%;
-    background-image: url(../src/images/congo.png);
-    height: 600px;
-    background-size: contain;
-    background-position-x: center;
-}
-.heading {
-    text-align: center;
-    font-size: 3rem;
-    color: E054A6;
-    color: #E054A6;
-    font-weight: 400;
-    font-family: Pacifico;
-}
-button.btn-a {
-    margin: 2rem 0;
-    background: #fcde16;
-    padding: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: 600;
-    width: 60%;
-    text-align: center;
-    PADDING-BOTTOM: .6REM;
-    padding-top: .6rem;
-    BORDER: NONE;
-    border-radius: 10px;
-    margin-top: 2.2rem;
-}
+        background-color: #fffdda;
+        width: 100%;
+        padding: 2% 12.5%;
+        background-image: url(../src/images/congo.png);
+        height: 600px;
+        background-size: contain;
+        background-position-x: center;
+    }
+    .heading {
+        text-align: center;
+        font-size: 3rem;
+        color: E054A6;
+        color: #e054a6;
+        font-weight: 400;
+        font-family: Pacifico;
+    }
+    button.btn-a {
+        margin: 2rem 0;
+        background: #fcde16;
+        padding: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 60%;
+        text-align: center;
+        padding-bottom: 0.6rem;
+        padding-top: 0.6rem;
+        border: NONE;
+        border-radius: 10px;
+        margin-top: 2.2rem;
+    }
 
-.grey {
-    width: 20%;
-    text-align: center;
-    margin-left: 4rem;
-}
+    .grey {
+        width: 20%;
+        text-align: center;
+        margin-left: 4rem;
+    }
 
-.time-box {
-    
-    margin-top: 1rem;
-    text-align: center;
-}
+    .time-box {
+        margin-top: 1rem;
+        text-align: center;
+    }
 
-.titleInfo.home {
-    display: none;
-}
+    .titleInfo.home {
+        display: none;
+    }
 
-.win-content {
-    margin-top: 3.5rem;
-}
+    .win-content {
+        margin-top: 3.5rem;
+    }
 
+    /* ?------------------------------------LOSE PAGE COMPONENT ------------------------------------------*/
 
- /* ?------------------------------------LOSE PAGE COMPONENT ------------------------------------------*/
+    .coupen-banner img {
+        width: 24rem;
+        /* text-align: center; */
+        margin-left: -2.2rem;
+    }
 
-.coupen-banner img {
-    width: 24rem;
-    /* text-align: center; */
-    margin-left: -2.2rem;
-}
-
-.lose-content {
-    margin-top: 3rem;
-}
+    .lose-content {
+        margin-top: 3rem;
+    }
 }
