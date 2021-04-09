@@ -206,14 +206,11 @@ width: 100%;
     width: 100%;
 }
 
-.gameBoard {
-    margin: 1rem 0;
-}
 .gameTile {
-    float: left;
+    margin-top: 1rem;
     width: 19%;
     border-radius: 10px;
-    margin-left: 0.6rem;
+    float: left;
 }
 
 

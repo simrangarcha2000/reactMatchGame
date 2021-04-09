@@ -14,11 +14,14 @@ function Game(){
     //Storing all the flip card Images
     const fronts =[
         <img src={burgerCard} alt="Burger Card Image"/>,
-        <img src={piggyCard} alt="Burger Card Image"/>,
-        <img src={tacoCard} alt="Burger Card Image"/>,
-        <img src={cabbageCard} alt="Burger Card Image"/>,
-        <img src={leafyCard} alt="Burger Card Image"/>
+        <img src={piggyCard} alt="Piggy Card Image"/>,
+        <img src={tacoCard} alt="Taco Card Image"/>,
+        <img src={cabbageCard} alt="Cabbage Card Image"/>,
+        <img src={leafyCard} alt="Leafy Card Image"/>
     ]
+
+    //To shuffle the cards - Randomizing
+    const deck = (fronts.concat(fronts).sort(()=> Math.random() - 0.5));
 
     return (
         <main>
@@ -33,11 +36,10 @@ function Game(){
                     <div className="score">0</div>
                 </div>
                 <div className="gameBoard">
-                    {fronts.map((f) => {
+                    {deck.map((f) => {
                         return (
                         <>
                     <Card content ={f}/>
-                    <Card content={f}/>
                     </>)
 
                     })}
