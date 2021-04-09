@@ -19,7 +19,9 @@ const Home = () => {
                 </div>
                 <div className="status">
                     <img src={cardsImage} alt="" />
-                    <button className="playbtn">play</button>
+                    <Link to="/game" className="playbtn">
+                        Play
+                    </Link>
                     <div className="textStatus">
                         <p className="text1">
                             Unfortunately , you are not eligible to play the
