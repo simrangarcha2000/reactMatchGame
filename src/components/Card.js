@@ -28,11 +28,11 @@ class Card extends React.Component{
             content = <img src={logo} alt="Back Side of Card"/>
         }
     return (
-        <main>
+        <article>
             <div className="gameTile" onClick={this.flip.bind(this)}>
                     {content}  
             </div> 
-        </main>
+        </article>
     );
     }
 };
