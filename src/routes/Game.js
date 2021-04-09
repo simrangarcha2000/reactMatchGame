@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
 import RegularHeader from "../components/RegularHeader";
 import Sponsors from "../components/Sponsors";
+import WinPage from "../routes/WinPage";
+import Timer from "../components/Timer";
 
 import burgerCard from "../images/gameCard1.png";
 import piggyCard from "../images/gameCard2.png";
@@ -18,10 +20,13 @@ const fronts = [
     { imgUrl: leafyCard, name: "leafy" },
 ];
 
+
+
 //To shuffle the cards - Randomizing
 const deck = fronts.concat(fronts).sort(() => Math.random() - 0.5);
 console.log(deck);
 const Game = () => {
+
     const [selectedCards, setSelectedCards] = useState({
         card1: null,
         card2: null,
@@ -64,7 +69,7 @@ const Game = () => {
                     <h3>{form.username}</h3>
                 </div>
                 <div className="gameInfo">
-                    <div className="timer">20:00:00</div>
+                    <Timer/>
                     <div className="score">0</div>
                 </div>
                 <div className="gameBoard">
