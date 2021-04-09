@@ -10,15 +10,11 @@ class Card extends React.Component{
         super(props);
         console.log(props);
         this.state = {
-            faceUp: false,
+            faceUp: props.faceUp,
         };
     }
 
-    flip(){
-        console.log(`Flipping from ${this.state.faceUp}`)
-        this.setState({faceUp: !this.state.faceUp})
-        console.log(`Flipping to ${this.state.faceUp}`)
-    }
+
 
     render(){
         let content;
@@ -29,7 +25,7 @@ class Card extends React.Component{
         }
     return (
         <article>
-            <div className="gameTile" onClick={this.flip.bind(this)}>
+            <div className="gameTile" >
                     {content}  
             </div> 
         </article>

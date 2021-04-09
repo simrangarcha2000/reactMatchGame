@@ -9,8 +9,24 @@ import tacoCard from "../images/tacoCard.png";
 import cabbageCard from "../images/cabbageCard.png";
 import leafyCard from "../images/leafyCard.png";
 
-function Game(){
 
+
+
+class Game extends React.Component{
+
+    /*constructor(props){
+        super(props)
+    }*/
+
+    flip() {
+        console.log("flipping");
+        console.log(`Flipping from ${this.state.faceUp}`)
+        this.setState({faceUp: !this.state.faceUp})
+        console.log(`Flipping to ${this.state.faceUp}`)
+    }
+    
+
+render(){
     //Storing all the flip card Images
     const fronts =[
         <img src={burgerCard} alt="Burger Card Image"/>,
@@ -21,7 +37,14 @@ function Game(){
     ]
 
     //To shuffle the cards - Randomizing
-    const deck = (fronts.concat(fronts).sort(()=> Math.random() - 0.5));
+    const deck = (fronts.concat(fronts).sort(()=> Math.random() - 0.5)
+    .map(f => {
+        return {
+            content: f,
+            faceUp: false
+        }
+    })
+            );
 
     return (
         <main>
@@ -39,7 +62,7 @@ function Game(){
                     {deck.map((f) => {
                         return (
                         <>
-                    <Card content ={f}/>
+                    <Card flip ={() => {this.flip()}} content ={f.content} faceUp={f.faceUp}/>
                     </>)
 
                     })}
@@ -51,5 +74,6 @@ function Game(){
         </main>
     );
 };
+}
 
 export default Game;
