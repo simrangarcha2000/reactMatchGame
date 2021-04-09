@@ -19,10 +19,7 @@ const Home = () => {
                 </div>
                 <div className="status">
                     <img src={cardsImage} alt="" />
-                    <button to="/src/routes/WinPage.js" className="playbtn">23:59:55</button>
-                    <Link className="toHomeThanks" to="/WinPage">
-                win page
-            </Link>
+                    <button className="playbtn">play</button>
                     <div className="textStatus">
                         <p className="text1">
                             Unfortunately , you are not eligible to play the

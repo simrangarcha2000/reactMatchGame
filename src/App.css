@@ -201,7 +201,7 @@ section {
     width: 50%;
     text-align: center;
     border: none;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 .playbtn:hover {
     background: #ffed7c;
