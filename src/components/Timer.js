@@ -24,9 +24,18 @@ class Timer extends React.Component{
                 count: prevState.count -1
             }))
         },1000)
+
+        /*if (count = 0){
+            if( ){
+
+            }else{
+
+            }
+        }*/
     }
     componentWillUnmount(){
         clearInterval(this.myInterval)
     }
+
 }
 export default Timer

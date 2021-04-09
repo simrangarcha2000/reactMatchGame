@@ -89,9 +89,9 @@ const Game = () => {
                                             )
                                                 ? false
                                                 : selectedCards.card1?.id ===
-                                                      index ||
-                                                  selectedCards.card2?.id ===
-                                                      index
+                                                    index ||
+                                                selectedCards.card2?.id ===
+                                                    index
                                                 ? false
                                                 : true
                                         }
