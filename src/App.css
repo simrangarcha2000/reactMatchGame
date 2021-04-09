@@ -305,10 +305,6 @@ section {
     width: 70%;
 }
 
-
-
-
-
 /****************** Styling the Sidebar Ad on Desktop *****************/
 
 #formDesktopAd {
@@ -644,7 +640,6 @@ button.btn-a p {
 }
 
 .time-box {
-    float: right;
     margin-top: 4rem;
 }
 
@@ -697,7 +692,6 @@ button.btn-a p {
 }
 
 .time-box2 {
-    float: right;
     margin-top: 4rem;
 }
 
